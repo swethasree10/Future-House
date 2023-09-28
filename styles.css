@@ -1,0 +1,636 @@
+/* *{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins&display=swap");
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top:2rem;
+    list-style: none;
+    font-family: "Poppins";
+}
+a{
+    text-decoration: none;
+}
+.bx.bx-street-view {
+    font-size: 60px; 
+    margin-top: 20px;/* Adjust the value as needed to increase the size */
+}
+
+:root{
+    --text-color:#000000;
+    --main-color:#83b735;
+}
+section{    
+    padding: 50px 10%;
+    font-size: 20px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background: #edecea; 
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover{
+    color:var(--main-color) ;
+}
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    display: flex;
+    /* align-items: center; */
+}
+
+.home-text h1{
+    margin-left: 360px;
+    margin-top: 200px;
+    font-size: 2.7rem;
+}
+.home-text p{
+    font-size: 0.98rem;
+    margin: 0.4rem 0 1.8rem;
+    margin-left: 360px;
+}
+.btn{
+    width: 150px;
+    height: 60px;
+    padding:10px;
+    color: #FFFFFF;
+    background-color: #060640;
+    border: 2px solid black;
+    margin-left: 360px;
+    border-radius: 10px;
+}
+/* .btn:hover{
+    background: #;
+} */
+/* .stars{
+    width: 60%;
+} */
+.stars{
+    display: flex;
+}
+.title-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    /* width: 150%; */
+
+}
+.box{
+    width: 300px;
+    position: relative;
+    
+}
+/* .title-price{
+    font-size: 1rem;
+    font-weight: 600;
+} */
+/* #item-tag-1{
+    border: 2px solid black;
+    width: 200px;
+    height: 400px;
+} */
+
+img{
+    width: 300px;
+    height: 400px;
+}
+
+del{
+    text-decoration: line-through;
+}
+button{
+    margin:20px;
+}
+
+
+.stars .bx{
+    color: var(--main-color);
+}
+
+.bx-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 7px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 4px 0 4px 0;
+    background:var(--main-color);
+
+}
+
+.box{
+    /* border: 2px solid black; */
+    
+    margin-top: 30px;
+    transition: box-shadow 0.3s; /* Add a transition for a smooth effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Change the box shadow on hover */
+}
+.item-tag1{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.First{
+    margin-left: 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 0; /* Position at the top of the relative parent (.box) */
+    right: 10px;
+    font-size: px; /* Position at the left of the relative parent (.box) */
+}
+
+.box-image {
+    width: 390px;
+    height: 400px;
+    position: relative;
+    /* Other styles */
+}
+
+.shop-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.about-img img {
+    width: 80%;
+    border-radius: 10px;
+    object-fit: contain; /* Use 'cover' to ensure the image covers the container */
+}
+
+.about-text span {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.about-text p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+}
+.about-text a{
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands-container{
+    display: flex;
+    grid-template-columns: repeat(aut-fit, minmax(100px, auto));
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.brands-container img{
+    width: 100px;
+    height: auto;
+    filter: grayscale(1);
+}
+.brands-container img:hover{
+    width: 100px;
+    height: auto;
+    filter: grayscale(0);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.newsletter h2{
+    color: #fff;
+}
+.news-box {
+    margin: 2rem auto;
+    margin-left: 938px;
+    width: 100%;
+    display: flex; /* Make the container a flex container */
+    align-items: center; /* Center items vertically within the container */
+    
+}
+
+.news-box input {
+    width: 400px; /* Adjust the width as needed */
+    height: 44px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+.news-box .btn {
+    height: 44px;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 20px; 
+    margin-right: 20px;/* Add padding to the button for spacing */
+}
+
+footer{
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+footer p{
+    font-size: 00.938rem;
+    margin-bottom: 10px;
+}
+
+
+/* Container for the form */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Form box */
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: -30%;
+    left: 28%;
+    transform: translate(-50%, 50%);
+    background: #a1b6b7;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #4a5554;
+    position: relative;
+    font-family: 'Comfortaa', sans-serif; /* Specify the font family */
+}
+
+.form-box h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #4a5554;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Input fields */
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+
+form p {
+    text-align: right;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #272c2c;
+}
+
+/* Button field */
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Add some space between input fields and buttons */
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background: #4a5554;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    font-size: 16px; /* Increase button font size */
+    font-weight: bold; /* Make the text bold */
+}
+
+.btn-field button.disable {
+    background: #eaeaea;
+    color: #555;
+    cursor: not-allowed; /* Show disabled cursor */
+}
+
+/* Filters */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.filters {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filters h2 {
+    margin-top: 0;
+}
+
+.price-range {
+    display: flex;
+    align-items: center;
+}
+
+.filter-label {
+    margin-right: 10px;
+}
+
+.filter-slider {
+    flex: 1;
+    width: auto;
+}
+
+.products {
+    margin: 20px;
+}
+
+
+
+/* Making Responsive */
+
+@media(max-width:991px){
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+}
+@media(max-width:881px){
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .shop-container,.new-container{
+        grid-template-columns: repeat(auto-fit,minmax(218px,auto));
+    }
+}
+
+@media(max-width:768px){
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background:#fff;
+        box-shadow: 0 4px 4px rgb(0 0 0 /10%);
+        transition: 0.2s ease;
+        text-align: center;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .navbar a:hover{
+        color: #fff;
+        background: var(--main-color);
+    }
+    .about{
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    }
+    .about-img{
+        padding-top: 1rem;
+        order: 2;
+    }
+    @media(max-width:491px){
+        .home-text h1{
+            font-size: 1.7rem;
+        }
+        .shop-container,.new-container{
+            grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+        }
+        .box .box-image{
+            height: 300px;
+
+        }
+        .news-box input{
+            width: 180px;
+        }        
+    }
+
+    @media (max-width: 991px) {
+        header {
+            padding: 18px 4%;
+        }
+        section {
+            padding: 50px 4%;
+        }
+    }
+    
+    @media (max-width: 881px) {
+        .home-text h1 {
+            font-size: 2rem;
+        }
+        .shop-container,
+        .new-container {
+            grid-template-columns: repeat(auto-fit, minmax(218px, auto));
+        }
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            padding: 11px 4%;
+        }
+        #menu-icon {
+            display: initial;
+        }
+        .header .navbar {
+            position: absolute;
+            top: -500px;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            transition: 0.2s ease;
+            text-align: center;
+        }
+        .navbar a {
+            padding: 1.5rem;
+            display: block;
+        }
+        .navbar.active {
+            top: 100%;
+        }
+        .navbar a:hover {
+            color: #fff;
+            background: var(--main-color);
+        }
+        .about {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        .about-img {
+            padding-top: 1rem;
+            order: 2;
+        }
+    }
+    
+    @media (max-width: 491px) {
+        .home-text h1 {
+            font-size: 1.7rem;
+        }
+        .shop-container,
+        .new-container {
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        }
+        .box .box-image {
+            height: 300px;
+        }
+        .news-box input {
+            width: 180px;
+        }
+        .about-text h2 {
+            font-size: 1.2rem;
+        }
+    }
+       
+}
+
+
+
+
+
+

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A future hosuing website that will allow people to buy the best products that promises to change the interior of your home ">
+    <meta name="keywords" content="house, furniture, ar/vr">
+    <title>Future Housing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        .home-text p {
+            font-size: 21px; /* You can adjust the size as needed */
+        }
+        .navbar a {
+            font-size: 21px; /* You can adjust the size as needed */
+        }
+        .logo {
+            font-size: 35px; /* You can adjust the size as needed */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    
+    <header>
+        <span class="logo">Future House</span>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- <div>Future House</div> -->
+       <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#brands">Our Partners</a></li>
+        <li><a href="#contact">Contact</a></li>
+       </ul>
+    </header>
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1><span>Bringing </span>Furniture Dreams <br>To Life <span>In 3D!</span></h1>
+            <p>At our service company, we specialize in creating breathtaking 3D visualizations for furniture. With meticulous attention to detail, we bring our business partner's design concepts to life, helping customers visualize and present furniture ideas with unparalleled realism and creativity.</p>
+            <a href="#shop" class="btn" >Shop now</a>
+        </div>
+    </section>
+    <!-- shop -->
+    <input type="text" id="searchInput" placeholder="Search for green items...">
+    <section class="shop" id="shop">
+
+        <div class="filters">
+            <h2>Filters</h2>
+    
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="chairs">Chairs</option>
+                <option value="tables">Tables</option>
+                <!-- Add more categories as needed -->
+            </select>
+    
+            <label for="color">Color:</label>
+            <select id="color">
+                <option value="all">All</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="blue">Blue</option>
+                <!-- Add more colors as needed -->
+            </select>
+    
+            <!-- Modify the price range label and add options -->
+        <label for="price">Price Range:</label>
+        <select id="price">
+            <option value="0-500">Under ₹500</option>
+            <option value="500-1000">₹500 - ₹1,000</option>
+            <option value="1000-2000">₹1,000 - ₹2,000</option>
+            <option value="2000-3000">₹2,000 - ₹3,000</option>
+            <option value="3000">Over ₹3,000</option>
+        </select>
+    
+            <label for="reviews">Minimum Rating:</label>
+            <select id="reviews">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    
+        <div class="products" id="products">
+            <!-- Furniture products will be displayed here -->
+        </div>
+        
+   <!-- <script src="script.js"></script> -->
+
+        <div class="heading">
+            <span><h3>New Arrival</h3></span>
+            <h2>Shop Now</h2>
+        </div>
+
+        <div class="shop-container">
+            
+            <div class="box"  id="green">
+                <div class="box-image">
+                    <img src="furniture/bb1/beanb1.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Bean Bag</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+                <div id="item-tag1">
+                    <span id="price" class="First">₹4500</span>
+                    <span id="realPrice" class="First"><del>₹6999</del></span>
+                    <span id="offer" class="First">42% off</span>                    
+                    <i class='bx bx-cart'></i>
+
+                    <!-- <a href="https://editor.assemblrworld.com/Viewer/-TElhe99UrEb4EyJ6YJw?playAR=true&distinctId=$device:18a8604d8a41964-063ddce71bdc6f-b457656-55df7-18a8604d8a41964 " class="button">Click me</a> -->
+                </div> 
+                <div class="icon">
+                    <a href="https://asblr.com/p4Zmx">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="250px" height="250px" viewBox="-78 -2 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM9.21586 7.77629C9.11801 7.46319 8.82804 7.25 8.5 7.25C8.17196 7.25 7.88199 7.46319 7.78414 7.77629L5.28414 15.7763C5.16059 16.1717 5.38094 16.5923 5.77629 16.7159C6.17165 16.8394 6.59231 16.6191 6.71586 16.2237L7.42639 13.95H9.57361L10.2841 16.2237C10.4077 16.6191 10.8283 16.8394 11.2237 16.7159C11.6191 16.5923 11.8394 16.1717 11.7159 15.7763L9.21586 7.77629ZM7.89514 12.45H9.10486L8.5 10.5145L7.89514 12.45ZM13.25 8C13.25 7.58579 13.5858 7.25 14 7.25H16C17.5188 7.25 18.75 8.48122 18.75 10C18.75 11.2469 17.9201 12.3 16.7826 12.637L18.636 15.6025C18.8555 15.9538 18.7488 16.4165 18.3975 16.636C18.0462 16.8555 17.5835 16.7488 17.364 16.3975L15.0843 12.75H14.75V16C14.75 16.4142 14.4142 16.75 14 16.75C13.5858 16.75 13.25 16.4142 13.25 16V8ZM14.75 11.25V8.75H16C16.6904 8.75 17.25 9.30964 17.25 10C17.25 10.6904 16.6904 11.25 16 11.25H14.75Z" fill="#1C274C"/>
+                    </a>
+                </div>             
+            </div>
+            <div class="box" id="brown">
+                <div class="box-image">
+                    <img src="furniture/bs1/bs1.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Book Shelf</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </div>
+                </div>
+                <div id="item-tag1">
+                    <span id="price" class="First">₹4500</span>
+                    <span id="realPrice" class="First"><del>₹6999</del></span>
+                    <span id="offer" class="First">42% off</span>
+                    <!-- <i class='bx bx-cart'></i> -->
+                    <!-- <a href="https://editor.assemblrworld.com/Viewer/-TElhe99UrEb4EyJ6YJw?playAR=true&distinctId=$device:18a8604d8a41964-063ddce71bdc6f-b457656-55df7-18a8604d8a41964 " class="button">Click me</a> -->
+                    <div class="icon">
+                        <a href="https://asblr.com/iH9ks">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="250px" height="250px" viewBox="-78 -2 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM9.21586 7.77629C9.11801 7.46319 8.82804 7.25 8.5 7.25C8.17196 7.25 7.88199 7.46319 7.78414 7.77629L5.28414 15.7763C5.16059 16.1717 5.38094 16.5923 5.77629 16.7159C6.17165 16.8394 6.59231 16.6191 6.71586 16.2237L7.42639 13.95H9.57361L10.2841 16.2237C10.4077 16.6191 10.8283 16.8394 11.2237 16.7159C11.6191 16.5923 11.8394 16.1717 11.7159 15.7763L9.21586 7.77629ZM7.89514 12.45H9.10486L8.5 10.5145L7.89514 12.45ZM13.25 8C13.25 7.58579 13.5858 7.25 14 7.25H16C17.5188 7.25 18.75 8.48122 18.75 10C18.75 11.2469 17.9201 12.3 16.7826 12.637L18.636 15.6025C18.8555 15.9538 18.7488 16.4165 18.3975 16.636C18.0462 16.8555 17.5835 16.7488 17.364 16.3975L15.0843 12.75H14.75V16C14.75 16.4142 14.4142 16.75 14 16.75C13.5858 16.75 13.25 16.4142 13.25 16V8ZM14.75 11.25V8.75H16C16.6904 8.75 17.25 9.30964 17.25 10C17.25 10.6904 16.6904 11.25 16 11.25H14.75Z" fill="#1C274C"/>
+                        </a>
+                    </div>
+                </div>               
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="furniture/ch1/ch1.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Chair</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </div>
+                </div>
+                <div id="item-tag1">
+                    <span id="price" class="First">₹4500</span>
+                    <span id="realPrice" class="First"><del>₹6999</del></span>
+                    <span id="offer" class="First">42% off</span>
+                    <i class='bx bx-cart'></i>
+                    <!-- <a href="https://editor.assemblrworld.com/Viewer/-TElhe99UrEb4EyJ6YJw?playAR=true&distinctId=$device:18a8604d8a41964-063ddce71bdc6f-b457656-55df7-18a8604d8a41964 " class="button">Click me</a> -->
+                    <div class="icon">
+                        <a href="https://asblr.com/i5V7h">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="250px" height="250px" viewBox="-78 -2 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM9.21586 7.77629C9.11801 7.46319 8.82804 7.25 8.5 7.25C8.17196 7.25 7.88199 7.46319 7.78414 7.77629L5.28414 15.7763C5.16059 16.1717 5.38094 16.5923 5.77629 16.7159C6.17165 16.8394 6.59231 16.6191 6.71586 16.2237L7.42639 13.95H9.57361L10.2841 16.2237C10.4077 16.6191 10.8283 16.8394 11.2237 16.7159C11.6191 16.5923 11.8394 16.1717 11.7159 15.7763L9.21586 7.77629ZM7.89514 12.45H9.10486L8.5 10.5145L7.89514 12.45ZM13.25 8C13.25 7.58579 13.5858 7.25 14 7.25H16C17.5188 7.25 18.75 8.48122 18.75 10C18.75 11.2469 17.9201 12.3 16.7826 12.637L18.636 15.6025C18.8555 15.9538 18.7488 16.4165 18.3975 16.636C18.0462 16.8555 17.5835 16.7488 17.364 16.3975L15.0843 12.75H14.75V16C14.75 16.4142 14.4142 16.75 14 16.75C13.5858 16.75 13.25 16.4142 13.25 16V8ZM14.75 11.25V8.75H16C16.6904 8.75 17.25 9.30964 17.25 10C17.25 10.6904 16.6904 11.25 16 11.25H14.75Z" fill="#1C274C"/>
+                        </a>
+                    </div>
+                </div>               
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="furniture/ct1/ct1.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Glass Center Table</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </div>
+                </div>
+                <div id="item-tag1">
+                    <span id="price" class="First">₹4500</span>
+                    <span id="realPrice" class="First"><del>₹6999</del></span>
+                    <span id="offer" class="First">42% off</span>
+                    <i class='bx bx-cart'></i>
+                    <!-- <a href="https://editor.assemblrworld.com/Viewer/-TElhe99UrEb4EyJ6YJw?playAR=true&distinctId=$device:18a8604d8a41964-063ddce71bdc6f-b457656-55df7-18a8604d8a41964 " class="button">Click me</a> -->
+                    <div class="icon">
+                        <a href="https://asblr.com/4n5Qq">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="250px" height="250px" viewBox="-78 -2 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM9.21586 7.77629C9.11801 7.46319 8.82804 7.25 8.5 7.25C8.17196 7.25 7.88199 7.46319 7.78414 7.77629L5.28414 15.7763C5.16059 16.1717 5.38094 16.5923 5.77629 16.7159C6.17165 16.8394 6.59231 16.6191 6.71586 16.2237L7.42639 13.95H9.57361L10.2841 16.2237C10.4077 16.6191 10.8283 16.8394 11.2237 16.7159C11.6191 16.5923 11.8394 16.1717 11.7159 15.7763L9.21586 7.77629ZM7.89514 12.45H9.10486L8.5 10.5145L7.89514 12.45ZM13.25 8C13.25 7.58579 13.5858 7.25 14 7.25H16C17.5188 7.25 18.75 8.48122 18.75 10C18.75 11.2469 17.9201 12.3 16.7826 12.637L18.636 15.6025C18.8555 15.9538 18.7488 16.4165 18.3975 16.636C18.0462 16.8555 17.5835 16.7488 17.364 16.3975L15.0843 12.75H14.75V16C14.75 16.4142 14.4142 16.75 14 16.75C13.5858 16.75 13.25 16.4142 13.25 16V8ZM14.75 11.25V8.75H16C16.6904 8.75 17.25 9.30964 17.25 10C17.25 10.6904 16.6904 11.25 16 11.25H14.75Z" fill="#1C274C"/>
+                        </a>
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <div class="shop-container">
+            <div class="box">
+                <div class="box-image">
+                    <img src="furniture/footstool(black)/fsb.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Footstool</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </div>
+                </div>
+                <div id="item-tag1">
+                    <span id="price" class="First">₹4500</span>
+                    <span id="realPrice" class="First"><del>₹6999</del></span>
+                    <span id="offer" class="First">42% off</span>
+                    <i class='bx bx-cart'></i>
+                    <!-- <a href="https://editor.assemblrworld.com/Viewer/-TElhe99UrEb4EyJ6YJw?playAR=true&distinctId=$device:18a8604d8a41964-063ddce71bdc6f-b457656-55df7-18a8604d8a41964 " class="button">Click me</a> -->
+                    <div class="icon">
+                        <a href="https://asblr.com/XHx3k">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="250px" height="250px" viewBox="-78 -2 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM9.21586 7.77629C9.11801 7.46319 8.82804 7.25 8.5 7.25C8.17196 7.25 7.88199 7.46319 7.78414 7.77629L5.28414 15.7763C5.16059 16.1717 5.38094 16.5923 5.77629 16.7159C6.17165 16.8394 6.59231 16.6191 6.71586 16.2237L7.42639 13.95H9.57361L10.2841 16.2237C10.4077 16.6191 10.8283 16.8394 11.2237 16.7159C11.6191 16.5923 11.8394 16.1717 11.7159 15.7763L9.21586 7.77629ZM7.89514 12.45H9.10486L8.5 10.5145L7.89514 12.45ZM13.25 8C13.25 7.58579 13.5858 7.25 14 7.25H16C17.5188 7.25 18.75 8.48122 18.75 10C18.75 11.2469 17.9201 12.3 16.7826 12.637L18.636 15.6025C18.8555 15.9538 18.7488 16.4165 18.3975 16.636C18.0462 16.8555 17.5835 16.7488 17.364 16.3975L15.0843 12.75H14.75V16C14.75 16.4142 14.4142 16.75 14 16.75C13.5858 16.75 13.25 16.4142 13.25 16V8ZM14.75 11.25V8.75H16C16.6904 8.75 17.25 9.30964 17.25 10C17.25 10.6904 16.6904 11.25 16 11.25H14.75Z" fill="#1C274C"/>
+                        </a>
+                    </div>
+                </div>              
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="furniture/lamp(1)/l1.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Lamp</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </div>
+                </div>
+                <div id="item-tag1">
+                    <span id="price" class="First">₹4500</span>
+                    <span id="realPrice" class="First"><del>₹6999</del></span>
+                    <span id="offer" class="First">42% off</span>
+                    <i class='bx bx-cart'></i>
+                    <!-- <a href="https://editor.assemblrworld.com/Viewer/-TElhe99UrEb4EyJ6YJw?playAR=true&distinctId=$device:18a8604d8a41964-063ddce71bdc6f-b457656-55df7-18a8604d8a41964 " class="button">Click me</a> -->
+                    <div class="icon">
+                        <a href="https://asblr.com/rSE3g">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="250px" height="250px" viewBox="-78 -2 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM9.21586 7.77629C9.11801 7.46319 8.82804 7.25 8.5 7.25C8.17196 7.25 7.88199 7.46319 7.78414 7.77629L5.28414 15.7763C5.16059 16.1717 5.38094 16.5923 5.77629 16.7159C6.17165 16.8394 6.59231 16.6191 6.71586 16.2237L7.42639 13.95H9.57361L10.2841 16.2237C10.4077 16.6191 10.8283 16.8394 11.2237 16.7159C11.6191 16.5923 11.8394 16.1717 11.7159 15.7763L9.21586 7.77629ZM7.89514 12.45H9.10486L8.5 10.5145L7.89514 12.45ZM13.25 8C13.25 7.58579 13.5858 7.25 14 7.25H16C17.5188 7.25 18.75 8.48122 18.75 10C18.75 11.2469 17.9201 12.3 16.7826 12.637L18.636 15.6025C18.8555 15.9538 18.7488 16.4165 18.3975 16.636C18.0462 16.8555 17.5835 16.7488 17.364 16.3975L15.0843 12.75H14.75V16C14.75 16.4142 14.4142 16.75 14 16.75C13.5858 16.75 13.25 16.4142 13.25 16V8ZM14.75 11.25V8.75H16C16.6904 8.75 17.25 9.30964 17.25 10C17.25 10.6904 16.6904 11.25 16 11.25H14.75Z" fill="#1C274C"/>
+                        </a>
+                    </div>
+                </div>               
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="furniture/sideboard(coffee)/csb.jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Sideboard</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </div>
+                </div>
+                <div id="item-tag1">
+                    <span id="price" class="First">₹4500</span>
+                    <span id="realPrice" class="First"><del>₹6999</del></span>
+                    <span id="offer" class="First">42% off</span>
+                    <i class='bx bx-cart'></i>
+                    <!-- <a href="https://editor.assemblrworld.com/Viewer/-TElhe99UrEb4EyJ6YJw?playAR=true&distinctId=$device:18a8604d8a41964-063ddce71bdc6f-b457656-55df7-18a8604d8a41964 " class="button">Click me</a> -->
+                    <div class="icon">
+                        <a href="https://asblr.com/wyxQr">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="250px" height="250px" viewBox="-78 -2 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM9.21586 7.77629C9.11801 7.46319 8.82804 7.25 8.5 7.25C8.17196 7.25 7.88199 7.46319 7.78414 7.77629L5.28414 15.7763C5.16059 16.1717 5.38094 16.5923 5.77629 16.7159C6.17165 16.8394 6.59231 16.6191 6.71586 16.2237L7.42639 13.95H9.57361L10.2841 16.2237C10.4077 16.6191 10.8283 16.8394 11.2237 16.7159C11.6191 16.5923 11.8394 16.1717 11.7159 15.7763L9.21586 7.77629ZM7.89514 12.45H9.10486L8.5 10.5145L7.89514 12.45ZM13.25 8C13.25 7.58579 13.5858 7.25 14 7.25H16C17.5188 7.25 18.75 8.48122 18.75 10C18.75 11.2469 17.9201 12.3 16.7826 12.637L18.636 15.6025C18.8555 15.9538 18.7488 16.4165 18.3975 16.636C18.0462 16.8555 17.5835 16.7488 17.364 16.3975L15.0843 12.75H14.75V16C14.75 16.4142 14.4142 16.75 14 16.75C13.5858 16.75 13.25 16.4142 13.25 16V8ZM14.75 11.25V8.75H16C16.6904 8.75 17.25 9.30964 17.25 10C17.25 10.6904 16.6904 11.25 16 11.25H14.75Z" fill="#1C274C"/>
+                        </a>
+                    </div>
+                </div>               
+            </div>
+            <div class="box">
+                <div class="box-image">
+                    <img src="furniture/sofa(black-D)/sofa(black-D).jpg" alt="">
+                </div>
+                <div class="title-price">
+                    <h3>Double-Seater Sofa</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </div>
+                </div>
+                <div id="item-tag1">
+                    <span id="price" class="First">₹4500</span>
+                    <span id="realPrice" class="First"><del>₹6999</del></span>
+                    <span id="offer" class="First">42% off</span>
+                    <i class='bx bx-cart'></i>
+                    <!-- <a href="https://editor.assemblrworld.com/Viewer/-TElhe99UrEb4EyJ6YJw?playAR=true&distinctId=$device:18a8604d8a41964-063ddce71bdc6f-b457656-55df7-18a8604d8a41964 " class="button">Click me</a> -->
+                </div>               
+                <div class="icon">
+                    <a href="https://asblr.com/ZyCZu">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="250px" height="250px" viewBox="-78 -2 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12ZM9.21586 7.77629C9.11801 7.46319 8.82804 7.25 8.5 7.25C8.17196 7.25 7.88199 7.46319 7.78414 7.77629L5.28414 15.7763C5.16059 16.1717 5.38094 16.5923 5.77629 16.7159C6.17165 16.8394 6.59231 16.6191 6.71586 16.2237L7.42639 13.95H9.57361L10.2841 16.2237C10.4077 16.6191 10.8283 16.8394 11.2237 16.7159C11.6191 16.5923 11.8394 16.1717 11.7159 15.7763L9.21586 7.77629ZM7.89514 12.45H9.10486L8.5 10.5145L7.89514 12.45ZM13.25 8C13.25 7.58579 13.5858 7.25 14 7.25H16C17.5188 7.25 18.75 8.48122 18.75 10C18.75 11.2469 17.9201 12.3 16.7826 12.637L18.636 15.6025C18.8555 15.9538 18.7488 16.4165 18.3975 16.636C18.0462 16.8555 17.5835 16.7488 17.364 16.3975L15.0843 12.75H14.75V16C14.75 16.4142 14.4142 16.75 14 16.75C13.5858 16.75 13.25 16.4142 13.25 16V8ZM14.75 11.25V8.75H16C16.6904 8.75 17.25 9.30964 17.25 10C17.25 10.6904 16.6904 11.25 16 11.25H14.75Z" fill="#1C274C"/>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About us</span>
+            <h2>Furniture is an important part <br> for comfort</h2>
+            <p>At Future House, we are passionate about transforming ideas into captivating visual experiences.</p>
+            <p>We specialize in providing cutting-edge 3D visualization services tailored specifically for the furniture industry.</p>
+            <p>Our journey is defined by creativity, innovation, and an unwavering commitment to excellence. We set out on a mission to bridge the gap between imagination and reality.</p>
+            <a href="#shop" class="btn">Learn More</a>
+
+        </div>
+    </section>
+
+    <!--Aishna-->
+
+    <!-- <section class="brands" id="brands">
+        <div class="heading">
+            <span>Brands</span>
+            <h2>Our Brand Partners</h2>
+        </div>
+        <div class="brands-container">
+            <img src="abc.png" alt="">
+            <img src="xyz.png" alt="">
+            <img src="abc.png" alt="">
+            <img src="xyz.png" alt="">
+        </div>
+    </section> -->
+    <!-- <section class="footer" id="footer">
+        <div class="footer-box">
+            <span class="logo">Future House</span>
+            <p>Bringing Furniture Dreams
+                To Life In 3D!</p>
+            <div class="social">
+                <a href="#">< class='bx bxl-facebook></i></a>
+                <a href="#"><i class='bx bxl-facebook></i></a>
+                <a href="#"><i class='bx bxl-facebook></i></a>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!--Aishna-->
+
+
+
+    <section class="brands" id="brands">
+        <div class="heading">
+            <span>Brands</span>
+            <h2>Our Brand Partners</h2>
+        </div>
+        <div class="brands-container">
+            <img src="img/Google.png" alt="">
+            <img src="img/amazon.png" alt="">
+            <img src="img/netflix.png" alt="">
+            <img src="img/tesla.png" alt="">
+            <img src="img/starbucks.png" alt="">
+            <img src="img/zoom.png" alt="">
+        </div>
+    </section>
+    <section class="newsletter" id="contact">
+        <h2>Subscribe to Newsletter</h2>
+        <div class="news-box">
+            <input type="text" placeholder="Enter Your Email">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </section>
+    <footer>
+        <div class="f1">
+            <h2>Future House</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ab?</p>
+
+        </div>
+        <div class="f2">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ab?</p>
+
+        </div>
+        <div class="f3">
+            <h2>Product</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ab?</p>
+
+        </div>
+        <div class="f4">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ab?</p>
+
+        </div>
+        
+    </footer>
+    
+
+    <script src="main.a"></script>
+
+
+    
+</body>
+</html>
